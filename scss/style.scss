@@ -1,0 +1,154 @@
+$primary: #8e44ad;
+$font: 'Lato', sans-serif;
+body{
+	padding: 90px 0 0 0;
+}
+body, input, button{
+	font-family: $font;
+}
+header{
+	width: 100%;
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: $primary;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.5);
+	.wrapper{
+		width: 500px;
+		max-width: 90%;
+		margin: 0 auto;
+		height: 50px;
+		text-align: center;
+		position: relative;
+	}
+	input{
+		width: 500px;
+		max-width: 99%;
+		height: 50px;
+		background: rgba(255,255,255,0.2);
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border: 0px;
+		box-shadow: none;
+		outline: none;
+		font-weight: 400;
+		font-size: 18px;
+		color: white;
+		text-indent: 20px;
+		&::-webkit-input-placeholder, -moz-input-placeholder,
+		-ms-input-placeholder{
+			color: rgba(255,255,255,0.75);
+		}
+	}
+	button{
+		width: 50px;
+		right: 0;
+		height: 50px;
+		position: absolute;
+		z-index: 2;
+		border-radius: 25px;
+		background: white;
+		border: 0px;
+		box-shadow: none;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		&:hover{
+			cursor: pointer;
+		}
+		i{
+			color: $primary;
+		}
+	}
+}
+.container{
+	width: 50%;
+	min-width: 450px;
+	text-align: center;
+	margin: 0 auto;
+}
+.todo{
+	width: 500px;
+	display: inline-block;
+	max-width: 90%;
+	padding: 30px 0;
+	margin: 0 auto;
+	li{
+		width: 386px;
+		padding: 14px 100px 14px 14px;
+		max-width: 80%;
+		position: relative;
+		display: block;
+		float: left;
+		height: 22px;
+		background: white;
+		border-radius: 5px;
+		font-size: 14px;
+		font-weight: 400;
+		color: black;
+		line-height: 22px;
+		-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.15);
+		-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.15);
+		margin-bottom: 10px;
+		overflow: hidden;
+		&:last-of-type{
+			margin: 0;
+		}
+	}
+	.buttons{
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		button{
+			i{
+				font-size: 22px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+			.remove{
+				color: lightgrey;
+				transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+				-o-transition: all .2s ease-in-out;
+				&:hover{
+					color: #c0392b;
+				}
+			}
+			.finished{
+				color: #2ecc71;
+			}
+			width: 50px;
+			height: 50px;
+			float: left;
+			background: none;
+			outline: none;
+			position: relative;
+			box-shadow: none;
+			border: none;
+			&:last-of-type:before{
+				content: ' ';
+				width: 1px;
+				height: 30px;
+				position: absolute;
+				top: 10px;
+				left: 0;
+				background: lightgrey;
+			}
+		}
+	}
+}
