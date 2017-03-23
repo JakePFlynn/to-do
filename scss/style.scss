@@ -152,3 +152,20 @@ header{
 		}
 	}
 }
+footer{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	background-color: $primary;
+	color: white;
+	font-size: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	a{
+		text-decoration: none;
+		color: white;
+	}
+}
